@@ -87,7 +87,7 @@ fn print_notes_of_page(page: &Page, todo_list: &Vec<String>) {
     for i in 0..std::cmp::min(todo_list.len() - *page as usize * 10, 10) {
         println!("{}. {}", i+1, todo_list[*page as usize * 10 + i]);
     }
-    println!("Page {} of {}", page, todo_list.len() / 10);
+    println!("Page {} of {}", page + 1, todo_list.len() / 10 + 1);
 }
 
 
